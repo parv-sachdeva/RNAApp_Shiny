@@ -107,6 +107,27 @@ uploadDataset <- function(id, parentSession,data) {
         function(input,output,session) {
             fileCacheData <- reactiveValues()
 
+            observe({
+                # Only load if not already populated (e.g., after file upload)
+                if (Sys.getenv("DISPLAY_MODE") == "DEMO" && is.null(data$counts) && is.null(data$samples)) {
+                    tryCatch({
+                        message("Loading demo data...")
+                        data$counts <- read.csv("sample-data/GSE148505_counts.csv", row.names = 1) %>%
+                            dplyr::filter(dplyr::if_all(.fns = ~ . != 0))
+                        
+                        print(data$counts %>% head)
+                        
+                        data$samples <- parseSampleSheet("sample-data/GSE148505_SampleSheet.csv")
+                        data$genome <- data$samples$genome[1]
+                        print(data$samples %>% head)
+                        runDESeqFromUpload(data, parentSession=parentSession)
+                        updateTabItems(session=parentSession, inputId= "sidebarTabs", "Sample")
+                    }, 
+                    interrupt = function(x){ getFileErrorModal(); print(x);},
+                    error = function(x){ getFileErrorModal(); print(x);}
+                    )
+                }
+            })
             
             # Get local countData 
             observeEvent(input$countData,{

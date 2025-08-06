@@ -439,7 +439,7 @@ getGenomeFromTranscriptFile <- function(filePath, header=TRUE){
 #' @examples
 #'  \donttest{
 #'}
-runDESeqFromUpload <- function(data, parentSession){
+runDESeqFromUpload <- function(data, parentSession, updateRmd=FALSE){
         withProgress(
             message = "processing uploaded data",
             value = 0,{    
@@ -467,13 +467,15 @@ runDESeqFromUpload <- function(data, parentSession){
             incProgress(0.7, detail = "preparing annotation db  ...")
             prepareAnnotationDb(data)                            
             incProgress(0.9, detail = "adding to report ...")
-            data$rmd <- updateRmd(session=parentSession, boxId='sample-header', serverData=data)
-            data$rmd <- updateRmd(session=parentSession, boxId='sample-table', serverData=data)
-            data$rmd <- updateRmd(session=parentSession, boxId='pca', serverData=data)
-            data$rmd <- updateRmd(session=parentSession, boxId='sample-correlation', serverData=data)
+            if(updateRmd) {
+                data$rmd <- updateRmd(session=parentSession, boxId='sample-header', serverData=data)
+                data$rmd <- updateRmd(session=parentSession, boxId='sample-table', serverData=data)
+                data$rmd <- updateRmd(session=parentSession, boxId='pca', serverData=data)
+                data$rmd <- updateRmd(session=parentSession, boxId='sample-correlation', serverData=data)
+            }
             setProgress(1)
             # update main tab 
-            updateTabItems(session=parentSession, inputId= "mainTabs", "Sample")
+            updateTabItems(session=parentSession, inputId= "sidebarTabs", "Sample")
             }
         )
 }
