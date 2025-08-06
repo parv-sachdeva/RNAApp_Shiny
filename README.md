@@ -19,4 +19,4 @@ The app can be run using the command: `shiny::runApp('<path to app folder>')`
 
 # Contact
 
-Contact [Shreya Sharma](mailto:sshreya319@gmail.com)  for any information or issues.
+Contact [Parv Sachdeva](mailto:parvsachdeva18@gmail.com)  for any information or issues.
