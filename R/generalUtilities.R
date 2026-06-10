@@ -689,7 +689,7 @@ addDeps<- function(){
     # incl: https://book.javascript-for-r.com/shiny-cookies.html#shiny-cookies-r-code
 
     tagList(
-        includeScript(system.file("customizedJs/icaScript.js", package = "rnaApp")),
+        includeScript("www/customJsScript.js"),
         tags$script(
             src = paste0(
             "https://cdn.jsdelivr.net/npm/js-cookie@rc/",
