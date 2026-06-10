@@ -36,6 +36,16 @@ ui = dashboardPage(
         tabName = "DE",
         icon = icon("balance-scale-right")
       ),
+      menuItem(
+        "Gene Ontology",
+        tabName = "GO",
+        icon = icon("circle-nodes")
+      ),
+      menuItem(
+        "AI Assistant",
+        tabName = "RAG",
+        icon = icon("robot")
+      ),
       bookmarkUI("Bookmark")
     )
   ),
@@ -44,7 +54,9 @@ ui = dashboardPage(
       uploadUI("Upload"),
       sampleUI("Sample"),
       geneUI("Gene"),
-      degUI("DE")
+      degUI("DE"),
+      goUI("GO"),
+      ragChatUI("RAG")
     )
   ),
   footer = footerUI()

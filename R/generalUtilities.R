@@ -718,6 +718,16 @@ getModal = function(modal_title, description, size="l"){
                     size = size,
                     easyClose = TRUE,
                     footer = NULL
-                ))        
+                ))
     )
+}
+
+getPopupWindow = function(modal_title, content, size="l"){
+    shiny::showModal(modalDialog(
+        title = modal_title,
+        content,
+        size = size,
+        easyClose = TRUE,
+        footer = NULL
+    ))
 }

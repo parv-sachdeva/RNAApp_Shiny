@@ -12,6 +12,10 @@ library(yaml)
 require(httr)
 require(XML)
 library(heatmaply)
+require(clusterProfiler)
+require(enrichplot)
+require(ggplot2)
+library(shinycssloaders)
 
 # Setting autoreload to false
 options(shiny.autoreload = FALSE)

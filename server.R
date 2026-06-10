@@ -5,8 +5,9 @@ server = function(input, output, session) {
 	infoDescriptions = read_yaml("infoAppDescriptions.yaml")
 	# Adding user help section to global data object
 	appDataObject$descriptions = infoDescriptions
-	appDataObject$comparisons = list() # list to store paired-wise comparions 
-	appDataObject$reportedBoxes = list() # list to store reported list 
+	appDataObject$comparisons = list() # list to store paired-wise comparions
+	appDataObject$reportedBoxes = list() # list to store reported list
+	appDataObject$goResults = list() # list to store GO enrichment results
 	appDataObject$deCatColors <- c('#91cc75', '#fac858', '#aaaaaa',  '#73c0de','#ee6666')
 	# Adding server component of bookmark service
 	bookmarkServer("Bookmark", appDataObject)
@@ -18,6 +19,10 @@ server = function(input, output, session) {
 	geneServer("Gene",appDataObject)
 	# Adding server component of differential expression service
 	degServer("DE", parentSession=session, appDataObject)
+	# Adding server component of gene ontology service
+	goServer("GO", parentSession=session, appDataObject)
+	# Adding server component of AI RAG assistant
+	ragChatServer("RAG", appDataObject)
 	# Adding server component of app header
 	headerServer("Header", appDataObject)
 }
