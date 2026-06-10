@@ -363,7 +363,7 @@
         "Maintainer": "Garrick Aden-Buie <garrick@posit.co>",
         "Repository": "CRAN",
         "Date/Publication": "2025-09-02 22:00:06 UTC",
-        "Built": "R 4.2.2; ; 2026-05-13 16:35:44 UTC; unix"
+        "Built": "R 4.2.2; ; 2026-06-10 20:30:43 UTC; unix"
       }
     },
     "DelayedArray": {
@@ -1021,7 +1021,7 @@
         "Maintainer": "Ivan Krylov <ikrylov@disroot.org>",
         "Repository": "CRAN",
         "Date/Publication": "2026-03-20 06:11:24 UTC",
-        "Built": "R 4.2.2; x86_64-pc-linux-gnu; 2026-05-13 16:01:09 UTC; unix"
+        "Built": "R 4.2.2; x86_64-pc-linux-gnu; 2026-06-10 20:30:25 UTC; unix"
       }
     },
     "XVector": {
@@ -1403,7 +1403,7 @@
         "Author": "David Granjon [aut, cre],\n  RinteRface [cph],\n  Almasaeed Studio [ctb, cph] (AdminLTE3 theme for Bootstrap 4),\n  Winston Chang [ctb, cph] (Utils functions from shinydashboard)",
         "Repository": "CRAN",
         "Date/Publication": "2025-08-25 11:10:14 UTC",
-        "Built": "R 4.2.2; ; 2026-05-13 16:54:55 UTC; unix"
+        "Built": "R 4.2.2; ; 2026-06-10 20:30:47 UTC; unix"
       }
     },
     "bslib": {
@@ -2021,7 +2021,7 @@
         "Maintainer": "Tyson Barrett <t.barrett88@gmail.com>",
         "Repository": "CRAN",
         "Date/Publication": "2026-05-06 05:10:20 UTC",
-        "Built": "R 4.2.2; x86_64-pc-linux-gnu; 2026-05-13 15:54:53 UTC; unix"
+        "Built": "R 4.2.2; x86_64-pc-linux-gnu; 2026-06-10 20:30:07 UTC; unix"
       }
     },
     "dbplyr": {
@@ -2225,7 +2225,7 @@
         "Maintainer": "David Munoz Tord <david.munoztord@mailbox.org>",
         "Repository": "CRAN",
         "Date/Publication": "2026-02-10 06:10:29 UTC",
-        "Built": "R 4.2.2; ; 2026-05-13 16:58:34 UTC; unix"
+        "Built": "R 4.2.2; ; 2026-06-10 20:30:51 UTC; unix"
       }
     },
     "egg": {
@@ -3397,7 +3397,7 @@
         "Maintainer": "Tal Galili <tal.galili@gmail.com>",
         "Repository": "CRAN",
         "Date/Publication": "2025-07-12 21:20:02 UTC",
-        "Built": "R 4.2.2; ; 2026-05-13 16:58:54 UTC; unix"
+        "Built": "R 4.2.2; ; 2026-06-10 20:31:07 UTC; unix"
       }
     },
     "highr": {
@@ -3573,7 +3573,7 @@
         "Maintainer": "Hadley Wickham <hadley@posit.co>",
         "Repository": "CRAN",
         "Date/Publication": "2026-02-13 16:20:15 UTC",
-        "Built": "R 4.2.2; ; 2026-05-13 16:12:56 UTC; unix"
+        "Built": "R 4.2.2; ; 2026-06-10 20:30:45 UTC; unix"
       }
     },
     "ids": {
@@ -3742,7 +3742,7 @@
         "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),\n  Duncan Temple Lang [ctb],\n  Lloyd Hilaiel [cph] (author of bundled libyajl)",
         "Repository": "CRAN",
         "Date/Publication": "2025-03-27 06:40:02 UTC",
-        "Built": "R 4.2.2; x86_64-pc-linux-gnu; 2026-05-13 15:56:08 UTC; unix"
+        "Built": "R 4.2.2; x86_64-pc-linux-gnu; 2026-06-10 20:30:31 UTC; unix"
       }
     },
     "knitr": {
@@ -4553,7 +4553,7 @@
         "Maintainer": "Carson Sievert <cpsievert1@gmail.com>",
         "Repository": "CRAN",
         "Date/Publication": "2026-01-24 07:50:02 UTC",
-        "Built": "R 4.2.2; ; 2026-05-13 16:57:35 UTC; unix"
+        "Built": "R 4.2.2; ; 2026-06-10 20:30:56 UTC; unix"
       }
     },
     "plyr": {
@@ -5518,7 +5518,7 @@
         "Maintainer": "Carson Sievert <carson@posit.co>",
         "Repository": "CRAN",
         "Date/Publication": "2026-02-20 09:00:03 UTC",
-        "Built": "R 4.2.2; ; 2026-05-13 16:50:13 UTC; unix"
+        "Built": "R 4.2.2; ; 2026-06-10 20:30:34 UTC; unix"
       }
     },
     "shinycssloaders": {
@@ -5544,7 +5544,7 @@
         "Maintainer": "Dean Attali <daattali@gmail.com>",
         "Repository": "CRAN",
         "Date/Publication": "2024-07-30 22:30:02 UTC",
-        "Built": "R 4.2.2; ; 2026-05-13 16:52:40 UTC; unix"
+        "Built": "R 4.2.2; ; 2026-06-10 20:31:06 UTC; unix"
       }
     },
     "shinyjqui": {
@@ -5622,7 +5622,7 @@
         "Maintainer": "Andrie de Vries <apdevries@gmail.com>",
         "Repository": "CRAN",
         "Date/Publication": "2025-12-14 10:50:02 UTC",
-        "Built": "R 4.2.2; ; 2026-05-13 16:56:15 UTC; unix"
+        "Built": "R 4.2.2; ; 2026-06-10 20:31:04 UTC; unix"
       }
     },
     "sourcetools": {
@@ -5980,7 +5980,7 @@
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
         "Repository": "CRAN",
         "Date/Publication": "2023-02-22 09:20:06 UTC",
-        "Built": "R 4.2.2; ; 2024-06-19 15:46:34 UTC; unix"
+        "Built": "R 4.2.2; ; 2026-06-10 20:31:01 UTC; unix"
       }
     },
     "timechange": {
@@ -6518,7 +6518,7 @@
         "Maintainer": "Hadley Wickham <hadley@posit.co>",
         "Repository": "CRAN",
         "Date/Publication": "2025-12-10 07:00:01 UTC",
-        "Built": "R 4.2.2; x86_64-pc-linux-gnu; 2026-05-13 16:01:17 UTC; unix"
+        "Built": "R 4.2.2; x86_64-pc-linux-gnu; 2026-06-10 20:30:20 UTC; unix"
       }
     },
     "yulab.utils": {
